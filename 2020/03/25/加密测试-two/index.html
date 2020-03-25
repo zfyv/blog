@@ -30,7 +30,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: url(https://s1.ax1x.com/2020/03/25/8XrplR.jpg);
     }
   </style>
   
@@ -44,7 +44,10 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #22ffc2">
+<!--
+<div class="overlay" style="background: url(https://s1.ax1x.com/2020/03/25/8XDKdU.jpg)">
+-->
+<div class="overlay">
 
 	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=70 src="//music.163.com/outchain/player?type=2&id=445886994&auto=0&height=66"></iframe>
 
@@ -69,7 +72,7 @@
 	        
 			</ul>
 		</nav>
-		<nav>
+		<nav style="color:red">
    			 总文章数 [11] 篇
 		</nav>
 		<nav class="header-smart-menu">
@@ -105,11 +108,39 @@
 	</header>		
 </div>
 
+<script >
+    window.onload=function(){
+    var bglist = [];
+        bglist[0] = "https://s1.ax1x.com/2020/03/25/8XEFOO.jpg";
+        bglist[1] = "https://s1.ax1x.com/2020/03/25/8XDKdU.jpg";
+        bglist[2] = "https://s1.ax1x.com/2020/03/25/8Xlern.jpg";
+        bglist[3] = "https://s1.ax1x.com/2020/03/25/8XDFiQ.jpg";
+        bglist[4] = "https://s1.ax1x.com/2020/03/25/8XrplR.jpg";
+        bglist[5] = "https://s1.ax1x.com/2020/03/25/8XrEkD.jpg";
+        bglist[6] = "https://s1.ax1x.com/2020/03/25/8XDTln.jpg";
+        bglist[7] = "https://s1.ax1x.com/2020/03/25/8XDoSs.jpg";
+        bglist[8] = "https://s1.ax1x.com/2020/03/25/8XD4YQ.jpg";
+        bglist[9] = "https://s1.ax1x.com/2020/03/25/8XDcOP.jpg";
+        bglist[10] = "https://s1.ax1x.com/2020/03/25/8XDyQI.jpg";
+        bglist[11] = "https://s1.ax1x.com/2020/03/25/8XDUeK.jpg";
+
+
+    var i = 0;
+    var bkg=document.getElementsByClassName("left-col")[0];
+    bkg.style.background="url(初始图片地址)";
+            function time(){
+                i<11?i++:i=0;
+                //这里控制条件，5是图片数量减一
+                bkg.style.background="url("+bglist[i]+")";
+            }
+            setInterval(time,9000);
+    }
+</script>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #22ffc2"></div>
+  	<div class="overlay js-overlay" style="background: url(https://s1.ax1x.com/2020/03/25/8XDKdU.jpg)"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -180,12 +211,12 @@
   
 
         
-        <a href="/blog/2020/03/25/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95-two/" class="archive-article-date">
+        <a href="/blog/2020/03/25/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95-two/" class="archive-article-date" >
   	<time datetime="2020-03-24T17:01:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-25</time>
 </a>
 
         <!-- 不蒜子统计 -->
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+        <span id="busuanzi_container_page_pv" style='display:none; color:black' class="archive-article-date">
               <i class="icon-smile icon"></i> 阅读数：[<span id="busuanzi_value_page_pv"></span>]次
         </span>
 
@@ -241,7 +272,7 @@
        
          <div class="essayending">
            <div>
-            <div style="text-align:center;color: #ccc;font-size:22px;">
+            <div style="text-align:center;color: #ccc;font-size:22px; color:red; font-weight:600;">
             <br/>
             <br/>
  ---------本文结束<i class="fa fa-paw"></i>感谢阅读---------
