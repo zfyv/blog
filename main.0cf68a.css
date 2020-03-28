@@ -2,7 +2,8 @@
 body{
 	margin:0;font-size:15px;font-family:Helvetica Neue,Helvetica,STHeiTi,Arial,sans-serif;line-height:1.5;
 	color:#333;
-	background:url(https://s1.ax1x.com/2020/03/25/8Xlern.jpg)
+	/*background:url(https://s1.ax1x.com/2020/03/25/8Xlern.jpg)*/
+	background: url(./img/bj.jpg);
 	;min-height:100%}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,
 	summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}
 	progress{vertical-align:baseline}[hidden],template{display:none}
