@@ -44,8 +44,6 @@
 
 <body>
   <div id="container" q-class="show:isCtnShow">
-
-
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
@@ -75,14 +73,14 @@
 	        
 				<li><a href="/blog/tags/">归档</a></li>
 	        
-				<li><a href="/blog/photos/">图库</a></li>
+				<li><a href="/blog/photos">图库</a></li>
 	        
-				<li><a href="/blog/null">软件</a></li>
+				<li><a href="/blog/">软件</a></li>
 	        
 			</ul>
 		</nav>
 		<nav style="color:red">
-   			 总文章数 [1] 篇
+   			 总文章数 [2] 篇
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -199,9 +197,9 @@
 		        
 					<li style="width: 25%"><a href="/blog/tags/">归档</a></li>
 		        
-					<li style="width: 25%"><a href="/blog/photos/">图库</a></li>
+					<li style="width: 25%"><a href="/blog/photos">图库</a></li>
 		        
-					<li style="width: 25%"><a href="/blog/null">软件</a></li>
+					<li style="width: 25%"><a href="/blog/">软件</a></li>
 		        
 				</ul>
 			</nav>
@@ -435,6 +433,20 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/blog/article/%E6%B5%8B%E8%AF%95-two.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          测试-two
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -476,6 +488,8 @@
   
 
   
+
+
 
 
           </div>
@@ -553,6 +567,13 @@ MathJax.Hub.Queue(function() {
 <!--点击爱心-->
 </script>
 <script type="text/javascript" src="/blog/./click.js"></script>
+
+
+
+
+
+
+
 
     
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
@@ -743,5 +764,18 @@ MathJax.Hub.Queue(function() {
 
 </div>
   </div>
+
+<!-- 代码块复制功能 -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js"></script>-->
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/clipboard.js"></script>  -->
+<script type="text/javascript" src="./clipboard_use.js"></script>
+
+<!--单击显示文字-->
+
+    <script type="text/javascript" src="./click_show_text.js"></script>
+
+
 </body>
 </html>
